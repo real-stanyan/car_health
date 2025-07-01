@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { GlobalContextProvider } from "@/components/GlobalContextProvider";
+import { Toaster } from "@/components/ui/sonner";
 
 import "./globals.css";
 
@@ -38,6 +39,7 @@ export default function RootLayout({
               <SidebarTrigger />
               {children}
             </main>
+            <Toaster />
           </SidebarProvider>
         </GlobalContextProvider>
       </body>
